@@ -17,4 +17,4 @@ class Post(models.Model):
     #     comment_time = models.DateTimeField(auto_now_add=True)
 
     def get_absolute_url(self):
-        return reversed(reverse('post_detail', args=[str(self.id)]))
+        return reversed(reverse('post_detail', args=[str(self.title)]))
