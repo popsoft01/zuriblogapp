@@ -12,7 +12,7 @@ class BlogListView(ListView):
     template_name = "home.html"
 
 
-class BlogDetailView(DetailView):
+class BlogDetailView(DetailView):  # new
     model = Post
     template_name = 'post_detail.html'
 
